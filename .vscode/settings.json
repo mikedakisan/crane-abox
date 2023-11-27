@@ -5,6 +5,7 @@
         "unistd.h": "c",
         "direct.h": "c",
         "windows.h": "c",
-        "dt_select.h": "c"
+        "dt_select.h": "c",
+        "typeinfo": "c"
     }
 }
