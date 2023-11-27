@@ -13,7 +13,9 @@ char* set_data_format(const char* name)
     strcpy(dr,name);
     if (name != NULL)
     {   
-        replace_string("crane_native/data/format.name","name",dr);
+        const char* ffp = "crane_native/data/format.name";
+        char* crp = replace_string(ffp,"name",dr);
+        printf("%s",crp);
         free(dr);
         dr = NULL;
     }
