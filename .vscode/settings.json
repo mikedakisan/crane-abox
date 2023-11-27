@@ -1,0 +1,10 @@
+{
+    "files.associations": {
+        "crane.h": "c",
+        "stdio.h": "c",
+        "unistd.h": "c",
+        "direct.h": "c",
+        "windows.h": "c",
+        "dt_select.h": "c"
+    }
+}
