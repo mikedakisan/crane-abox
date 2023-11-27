@@ -6,6 +6,7 @@
         "direct.h": "c",
         "windows.h": "c",
         "dt_select.h": "c",
-        "typeinfo": "c"
+        "typeinfo": "c",
+        "string.h": "c"
     }
 }
