@@ -29,10 +29,9 @@ char* replace_string(const char* input,const char* cw, const char* nw)
             result[result_index++] = input[input_index++];
         }
     }
-
     result[result_index] = '\0';
-
-    printf("%s",result);
     return result;
+    free(result);
+    result = NULL;
 }
 #endif
