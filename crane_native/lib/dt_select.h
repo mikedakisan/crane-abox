@@ -15,6 +15,8 @@ char* set_data_format(const char* name)
     {   
         const char* ffp = "crane_native/data/format.name";
         char* crp = replace_string(ffp,"name",dr);
+        FILE* form;
+        form = fopen(crp,"w");
         printf("%s",crp);
         free(dr);
         dr = NULL;
