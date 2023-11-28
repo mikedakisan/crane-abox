@@ -3,6 +3,6 @@
 
 int main()
 {
-    set_data_format("swan");
+    set_data_format("test");
     return 0;
 }
