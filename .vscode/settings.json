@@ -7,6 +7,10 @@
         "windows.h": "c",
         "dt_select.h": "c",
         "typeinfo": "c",
-        "string.h": "c"
+        "string.h": "c",
+        "data_format.h": "c",
+        "wrepl.h": "c",
+        "err.h": "c",
+        "stdlib.h": "c"
     }
 }
