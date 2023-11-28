@@ -24,18 +24,24 @@ char* set_data_format(char* fname)
 char* create_data_file(const char* name)
 {
     char* dr = malloc(256);
-    const char* ffp = "crane_native/data/data.name";
+    char* dr2 = malloc(256);
+    const char* file_format_path = "crane_native/data/name.format";
     if (name == NULL) return NULL;
     if (dr == NULL) return NULL;
+    if (dr2 == NULL) return NULL;
+    if (data_format_name == NULL) return NULL;
 
     strcpy(dr,name);
+    strcpy(dr2,data_format_name);
     if (name != NULL)
     {
-        char* crp = replace_string(ffp,"name",dr);
+        char* crp = replace_string(file_format_path,"name",dr);
+        char* crp_final = replace_string(crp,"format",dr2);
         FILE* form;
-        form = fopen(crp,"w");
+        form = fopen(crp_final,"w");
         free(dr);
-        dr = NULL;
+        free(dr2);
+        dr,dr2 = NULL;
     }
 }
 
