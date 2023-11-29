@@ -1,7 +1,7 @@
 ﻿# Crane
 Crane is an (OSS) large library of tools ranging from custom data files and extensions to making complex C algorithms easier to use with the customizable built in functions of the framework.
 
-### If you want a more detailed explanation regarding the framework please visit the (wiki)[https://github.com/crane-lib/crane/wiki]
+### If you want a more detailed explanation regarding the framework please visit the [wiki](https://github.com/crane-lib/crane/wiki)
 ---
 # Data File Creation
 With crane you can create your own data files with custom names and formats in C.
