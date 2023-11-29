@@ -21,11 +21,15 @@ char* set_data_format(char* fname)
     }
 }
 
-char* create_data_file(const char* name)
+char* create_data_file(const char* name, const char* path)
 {
     char* dr = malloc(256);
     char* dr2 = malloc(256);
-    const char* file_format_path = "crane_native/data/name.format";
+    const char* default_path = "crane_native/data/name.format";
+    if (path == NULL || strlen(path) == 0) {
+        path = default_path;
+    }
+    const char* file_format_path = path;
     if (name == NULL) return NULL;
     if (dr == NULL) return NULL;
     if (dr2 == NULL) return NULL;

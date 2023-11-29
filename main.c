@@ -4,6 +4,6 @@
 int main()
 {
     set_data_format("test");
-    create_data_file("hello");
+    create_data_file("hello", NULL); 
     return 0;
 }
